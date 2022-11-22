@@ -1,0 +1,299 @@
+
+h1{
+    color: blue;
+}
+
+header{
+background-color: rgb(55, 54, 54);
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+header nav ul li a{
+text-decoration: none;
+color: rgb(245, 245, 245);
+transition: 1s;
+
+}
+header nav ul li a:hover{
+    color: brown;
+
+
+}
+
+header nav ul{
+list-style: none;
+display: flex;
+
+}
+
+.hero{
+
+    text-align: center;
+     width: 100%;
+     height: 85vh;
+    background-image: url(../img/zapatilla\ 7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero h2{
+
+
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+font-weight: 900;
+font-style: italic;
+border: 2px solid white;
+padding: 20px;
+    
+
+}
+.hero p{
+margin-bottom: 20px;
+
+}
+.hero a{
+text-decoration: none;
+color: aliceblue;
+background-color: blue;
+padding: 10px;
+
+}
+.hero a:hover{
+    background-color: white;
+    color: blue;
+}
+
+
+
+header a h1 span{
+    color: blanchedalmond;
+
+}
+
+header nav ul li{
+
+    
+    margin: 10px 80px 5px 100px;
+}
+
+footer a img{
+width: 100px;
+height: 100px;
+}
+.bienvenidos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+
+}
+
+.bienvenidos .imagen-contenedor{
+display: flex;
+flex-direction: row;
+
+}
+.bienvenidos img{
+width: 250px;
+height: 450px;
+
+
+}
+
+
+.productos .productos-contenedor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productos .productos-contenedor div{
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 15px;
+    transition: 1s;
+   
+}
+.productos .productos-contenedor div:hover{
+    transform: scale(1.1);
+}
+
+
+.productos h2{
+    text-align: center;
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+}
+    
+
+
+.productos div img{
+width: 250px;
+height: 250px;
+
+}
+.productos div a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+    padding: 5px;
+
+}
+
+.galeria div{ 
+width: 250px;
+height: 250px;
+position: relative;
+
+}
+
+.galeria img{
+width: 250px;
+height: 250px;
+}
+.galeria div h3{
+position: absolute;
+bottom: 0;
+color: aliceblue;
+background-color: black;
+width: 100%;
+text-align: center;
+}
+
+.fixed{
+position: fixed;
+bottom: 10%;
+right: 3%;
+background-color: antiquewhite;
+color: black;
+font-size: 18px;
+text-align: center;
+width: 200px;
+height: 200px;
+border: 2px solid black;
+border-radius: 100%;
+}
+
+.fixed div{
+    margin-top: 25px;
+}
+@media screen and(max-width:950px){
+.grid-contenedor{
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-items{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+}
+
+
+@media screen and (max-width: 970px){
+    .bienvenidos{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .bienvenidos .bienvenidos-contenedor{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .fixed{
+        display: none;
+    }
+}
+@media screen and (max-width: 543px){
+    .hero h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    header{
+        flex-direction: column;
+    }
+    .bienvenidos{
+        margin: 50px;
+    }
+}
+@media screen and(max-width:450px){
+    .grid-contenedor{
+        grid-template-columns: 1fr;
+    }
+    .grid-items{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width:369px){
+header{
+    height: auto;
+}
+
+    header nav ul{ 
+    flex-direction: column;
+}
+.hero h2{
+    padding: 10px;
+}
+    }
+
+    .grid-contenedor{
+        border: 4px solid rgb(3, 3, 3);
+        margin: 5px;
+        display: grid;
+        grid-auto-rows: 200px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+
+        }
+        .grid-contenedor div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+.grid-items{
+    border: 2px solid rgb(170, 170, 170);
+    background-color: antiquewhite;
+font-size: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+
+}
+.grid-items-item-5{
+    grid-row: span 2;
+}
+.grid-items-item-1{
+    grid-row: span 2;
+}
+.grid-items-item-6{
+    grid-column: span 2;
+    
+}
+
+
+
